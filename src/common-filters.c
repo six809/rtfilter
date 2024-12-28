@@ -134,7 +134,7 @@ void reverse_fir(double *fir, int length)
 	for (i = 0; i < length; i++)
 		fir[i] = -1.0 * fir[i];
 
-	fir[length - 1] += 1.0;
+	fir[length / 2] += 1.0;
 }
 
 /*	Algorithm taken form:
